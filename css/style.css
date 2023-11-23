@@ -1,0 +1,205 @@
+:root {
+    --neonblack: #191825;
+    /* font family */
+    --popin: 'Poppins', sans-serif;
+    --robot: 'Roboto', sans-serif;
+    --fijallla: 'Fjalla One', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+::-webkit-scrollbar{
+    width:5px;
+    background-color:#191825;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#090912;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+
+body {
+
+    font-family: var(--popin) !important;
+    background-color: var(--neonblack) !important;
+}
+
+.navbar {
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #090912;
+    width: 100%;
+    height: 90px;
+    z-index: 1000;
+    overflow: hidden;
+
+}
+
+.navbar .navbar-brand {
+    color: #ed8610;
+    font-size: 2.5rem;
+    font-family: var(--robot) !important;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    color: #ed8610;
+    font-size: 18px;
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 30px;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+@media(max-width:991px) {
+    .navbar .navbar-nav {
+        background-color: #12121C;
+        border-radius: 20px
+    }
+
+    .navbar .nav-link {
+        color: white;
+        padding-left: 2rem;
+    }
+}
+
+.btn-dark {
+    width: 155px;
+    height: 50px;
+    border: 2px solid #ed8610;
+    outline: none;
+    border-radius: 20px;
+    background-color: transparent;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 46px;
+    font-weight: bold;
+
+}
+
+.btn-dark:hover {
+    border: 2px solid #ed8610;
+    background-color: #090912;
+}
+
+
+.custom-bg {
+    background-color: #ed8610;
+}
+
+.align-right {
+    float: right;
+}
+
+.services-section .box {
+    width: 300px;
+    height: 250px;
+    border: 2px solid white;
+
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 767px) {
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+        margin-right: 0; /* Remove a margem direita para dispositivos móveis */
+        position: relative; /* Muda a posição de volta para o padrão se necessário */
+        padding-left: 0; /* Anula qualquer padding esquerdo que possa ter sido definido */
+    }
+
+    .btn-dark {
+        width: 100%; /* Faz com que os botões ocupem a largura total */
+        margin-bottom: 10px; /* Adiciona espaço abaixo dos botões */
+    }
+
+    /* Se você tem uma classe personalizada para a seção de serviços, ajuste o padding e margin conforme necessário */
+    .my-services {
+        margin-top: 20px; /* Adiciona espaço acima da seção de serviços se necessário */
+        padding: 0 15px; /* Adiciona padding horizontal para não colar no borda do dispositivo */
+    }
+
+    /* Ajusta o texto para não ficar muito comprimido nos dispositivos móveis */
+    p, h1, h2, h3, h4, h5, h6 {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+/* Estilos para telas pequenas */
+@media (max-width: 576px) {
+    .contact-info-container {
+        flex-direction: column; /* Empilha os ícones e texto verticalmente */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+    }
+    .contact-link {
+        margin-top: 5px; /* Adiciona um espaço entre o ícone e o texto */
+    }
+    #contact-icon, #linkedIn-icon {
+        margin-bottom: 5px; /* Adiciona espaço abaixo do ícone */
+    }
+}
+
+
+/* Contact Section */
+#Contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(237, 134, 16);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-icon {
+    cursor:default;
+    height:2rem;
+}
